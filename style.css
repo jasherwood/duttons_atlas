@@ -52,8 +52,8 @@ body, html {
 
 /*Navbar background color*/
 .bg-light {
-  background: #D49B72 !important;
-  border-bottom: solid 2px #D49B72;
+  background: #d49b72 !important;
+  border-bottom: solid 2px #d49b72;
 }        
 
 .esri-widget {
