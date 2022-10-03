@@ -1,11 +1,10 @@
 // JS for the map
-require(["esri/Map", "esri/views/SceneView", "esri/WebScene", "esri/layers/SceneLayer", "esri/tasks/support/Query",
+require(["esri/Map", "esri/views/SceneView", "esri/WebScene", "esri/layers/SceneLayer",
   "esri/widgets/Home", "esri/geometry/Extent"], function(
   Map,
   SceneView,
   WebScene,
   SceneLayer,
-  Query,
   Home,
   Extent      
 ) { 
