@@ -1,79 +1,112 @@
-/*Font for the entire app*/
-body, html {
+html, body { 
   font-family: 'Merriweather', serif !important;
 }
 
 .pnlm-title-box {
-   font-family: 'Merriweather', serif !important;
+  font-family: 'Merriweather', serif !important;
 }
-/*Map container*/
+
 #viewDiv {
   position: absolute;
-  top: 0;
-  bottom: 0;        
   padding: 0;
-  margin-top: 56px;        
+  margin: 0;
+  height: 100%;
   width: 100%;
+}
+
+#logo {
+vertical-align:middle;
 }
 
 /*Navbar height*/
 .navbar {
   height: 56.5px;  
 }
-/*Main Navbar Title and Logo*/
-.navbar-brand {
-  padding: 0 15px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;    
-}
-/*Navbar links*/
-.navbar-light .navbar-nav .nav-link {
-  color: #50433d;
-  font-size: 13px;
-  /* font-weight: bolder; */
-}
 
-.navbar-light .navbar-nav .nav-link:visited {
-  color: #50433d;  
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #50433d;
-  /*font-family: 'Noto Sans';*/
-  border-bottom: solid 3px #50433d;  
-}
-
-/*Navbar link color*/
-.navbar-light .navbar-brand {
-  color: #50433d;
+.navbar-brand span {
+font-size: 1.1em;
+display:inline-block;
+vertical-align:middle;
 }
 
 /*Navbar background color*/
 .bg-light {
   background: #D49b72 !important;
   border-bottom: solid 2px #D49B72;
-}        
+} 
 
-.esri-widget {
-  font-family: 'Merriweather', serif;
+/*Navbar link color*/
+.navbar-light .navbar-brand {
+  color: #50433d;
+  /* font-variant: small-caps; */
 }
+
+/*Navbar link color*/
+.navbar-light .navbar-brand:visited {
+color: #50433d;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #50433d;
+  font-size: 0.8125em;
+}
+.navbar .navbar-nav .nav-link:hover{
+  color: #50433d;
+  /* border-bottom: solid 3px #50433d;  */
+  border-bottom: solid 3px #A23617; 
+}
+
+/* .navbar-nav {
+margin-left:auto;
+} */
 
 #viewerModal {
   border-radius: 0px;
   z-index: 999999999999999999999999999999999999999999999999999999999;
 }
-.custom-hotspot {
-  height: 50px;
-  width: 50px;
-  background: #f00;
+
+.esri-widget {
+font-family: 'Merriweather', serif;
 }
 
-#advancedModal {
+/*Infobox*/
+.infolink {
+  color: #A23617;
+}
+
+#infoModal img {
+  border: solid 1px black;
+}
+
+/*Information Modal*/ 
+#infoModal .modal-dialog{
+  overflow-y: initial !important
+}
+
+#infoModal .modal-body{
+  height: 80vh;
+  overflow-y: auto;
+}
+
+#infoModal .modal-title{
+  font-weight: normal !important;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em
+}
+
+#infoModal {
   border-radius: 0px;
   z-index: 999999999999999999999999999999999999999999999999999999999;
+}
+
+#infoModal p {
+  font-size: 0.85em;
+  font-family: 'Merriweather', serif
+}
+
+#infoModal ul {
+  font-size: 0.85em;
+  font-family: 'Merriweather', serif
 }
 
 /*ESRI Popup CSS*/
@@ -146,27 +179,6 @@ body:not(.esriIsPhoneSize) #viewDiv .esri-popup.esri-popup--is-docked .esri-popu
 .esri-popup__header-title {
   text-align: left;
 }
-
-h7 {
-  font-size: 12px;
-}
-
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
-.thumbdisplay {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-
-#image {
-  display: none;
-}
-
-
 
 @media only screen and (max-width: 600px) {
   body:not(.esriIsPhoneSize) #viewDiv .esri-popup.esri-popup--is-docked .esri-popup__main-container {
